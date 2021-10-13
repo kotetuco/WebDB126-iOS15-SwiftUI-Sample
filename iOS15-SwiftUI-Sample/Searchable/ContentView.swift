@@ -33,7 +33,7 @@ struct ContentView: View {
                 }
                 .listStyle(.insetGrouped)
             }
-            .searchable(text: $query)
+            .searchable(text: $query, prompt: "Search for name")
             .navigationTitle("Characters")
         }
     }
