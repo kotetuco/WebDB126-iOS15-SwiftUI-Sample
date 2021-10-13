@@ -15,6 +15,10 @@
 		9CD33E2427172C2E0092EE6B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD33E2327172C2E0092EE6B /* ContentView.swift */; };
 		9CD33E2627172C300092EE6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CD33E2527172C300092EE6B /* Assets.xcassets */; };
 		9CD33E2927172C300092EE6B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CD33E2827172C300092EE6B /* Preview Assets.xcassets */; };
+		9CD33E3427172FFE0092EE6B /* PullToRefreshApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD33E3327172FFE0092EE6B /* PullToRefreshApp.swift */; };
+		9CD33E3627172FFE0092EE6B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD33E3527172FFE0092EE6B /* ContentView.swift */; };
+		9CD33E38271730010092EE6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CD33E37271730010092EE6B /* Assets.xcassets */; };
+		9CD33E3B271730010092EE6B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CD33E3A271730010092EE6B /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,11 @@
 		9CD33E2327172C2E0092EE6B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9CD33E2527172C300092EE6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CD33E2827172C300092EE6B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9CD33E3127172FFE0092EE6B /* PullToRefresh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PullToRefresh.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CD33E3327172FFE0092EE6B /* PullToRefreshApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullToRefreshApp.swift; sourceTree = "<group>"; };
+		9CD33E3527172FFE0092EE6B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9CD33E37271730010092EE6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9CD33E3A271730010092EE6B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +54,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9CD33E2E27172FFE0092EE6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -53,6 +69,7 @@
 			children = (
 				9CD33E0C27172B980092EE6B /* iOS15-SwiftUI-Sample */,
 				9CD33E2027172C2E0092EE6B /* Searchable */,
+				9CD33E3227172FFE0092EE6B /* PullToRefresh */,
 				9CD33E0B27172B980092EE6B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,6 +79,7 @@
 			children = (
 				9CD33E0A27172B980092EE6B /* iOS15-SwiftUI-Sample.app */,
 				9CD33E1F27172C2D0092EE6B /* Searchable.app */,
+				9CD33E3127172FFE0092EE6B /* PullToRefresh.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,6 +122,25 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		9CD33E3227172FFE0092EE6B /* PullToRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				9CD33E3327172FFE0092EE6B /* PullToRefreshApp.swift */,
+				9CD33E3527172FFE0092EE6B /* ContentView.swift */,
+				9CD33E37271730010092EE6B /* Assets.xcassets */,
+				9CD33E39271730010092EE6B /* Preview Content */,
+			);
+			path = PullToRefresh;
+			sourceTree = "<group>";
+		};
+		9CD33E39271730010092EE6B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9CD33E3A271730010092EE6B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,6 +178,23 @@
 			productReference = 9CD33E1F27172C2D0092EE6B /* Searchable.app */;
 			productType = "com.apple.product-type.application";
 		};
+		9CD33E3027172FFE0092EE6B /* PullToRefresh */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CD33E3C271730010092EE6B /* Build configuration list for PBXNativeTarget "PullToRefresh" */;
+			buildPhases = (
+				9CD33E2D27172FFE0092EE6B /* Sources */,
+				9CD33E2E27172FFE0092EE6B /* Frameworks */,
+				9CD33E2F27172FFE0092EE6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PullToRefresh;
+			productName = PullToRefresh;
+			productReference = 9CD33E3127172FFE0092EE6B /* PullToRefresh.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -155,6 +209,9 @@
 						CreatedOnToolsVersion = 13.0;
 					};
 					9CD33E1E27172C2D0092EE6B = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					9CD33E3027172FFE0092EE6B = {
 						CreatedOnToolsVersion = 13.0;
 					};
 				};
@@ -174,6 +231,7 @@
 			targets = (
 				9CD33E0927172B980092EE6B /* iOS15-SwiftUI-Sample */,
 				9CD33E1E27172C2D0092EE6B /* Searchable */,
+				9CD33E3027172FFE0092EE6B /* PullToRefresh */,
 			);
 		};
 /* End PBXProject section */
@@ -197,6 +255,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9CD33E2F27172FFE0092EE6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CD33E3B271730010092EE6B /* Preview Assets.xcassets in Resources */,
+				9CD33E38271730010092EE6B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -215,6 +282,15 @@
 			files = (
 				9CD33E2427172C2E0092EE6B /* ContentView.swift in Sources */,
 				9CD33E2227172C2E0092EE6B /* SearchableApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CD33E2D27172FFE0092EE6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CD33E3627172FFE0092EE6B /* ContentView.swift in Sources */,
+				9CD33E3427172FFE0092EE6B /* PullToRefreshApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +533,66 @@
 			};
 			name = Release;
 		};
+		9CD33E3D271730010092EE6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PullToRefresh/Preview Content\"";
+				DEVELOPMENT_TEAM = TXFV3DH636;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.kotetu.example.swiftui.ios15.PullToRefresh;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9CD33E3E271730010092EE6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PullToRefresh/Preview Content\"";
+				DEVELOPMENT_TEAM = TXFV3DH636;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.kotetu.example.swiftui.ios15.PullToRefresh;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -483,6 +619,15 @@
 			buildConfigurations = (
 				9CD33E2B27172C300092EE6B /* Debug */,
 				9CD33E2C27172C300092EE6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CD33E3C271730010092EE6B /* Build configuration list for PBXNativeTarget "PullToRefresh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CD33E3D271730010092EE6B /* Debug */,
+				9CD33E3E271730010092EE6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
