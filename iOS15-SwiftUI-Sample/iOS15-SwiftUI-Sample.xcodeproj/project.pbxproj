@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9CD33E0E27172B980092EE6B /* iOS15_SwiftUI_SampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD33E0D27172B980092EE6B /* iOS15_SwiftUI_SampleApp.swift */; };
-		9CD33E1027172B980092EE6B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD33E0F27172B980092EE6B /* ContentView.swift */; };
-		9CD33E1227172B9C0092EE6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CD33E1127172B9C0092EE6B /* Assets.xcassets */; };
-		9CD33E1527172B9C0092EE6B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CD33E1427172B9C0092EE6B /* Preview Assets.xcassets */; };
 		9CD33E2227172C2E0092EE6B /* SearchableApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD33E2127172C2E0092EE6B /* SearchableApp.swift */; };
 		9CD33E2427172C2E0092EE6B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD33E2327172C2E0092EE6B /* ContentView.swift */; };
 		9CD33E2627172C300092EE6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CD33E2527172C300092EE6B /* Assets.xcassets */; };
@@ -22,11 +18,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9CD33E0A27172B980092EE6B /* iOS15-SwiftUI-Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS15-SwiftUI-Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9CD33E0D27172B980092EE6B /* iOS15_SwiftUI_SampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS15_SwiftUI_SampleApp.swift; sourceTree = "<group>"; };
-		9CD33E0F27172B980092EE6B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		9CD33E1127172B9C0092EE6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9CD33E1427172B9C0092EE6B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9CD33E1F27172C2D0092EE6B /* Searchable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Searchable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CD33E2127172C2E0092EE6B /* SearchableApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchableApp.swift; sourceTree = "<group>"; };
 		9CD33E2327172C2E0092EE6B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,13 +31,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9CD33E0727172B980092EE6B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		9CD33E1C27172C2D0092EE6B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -67,7 +51,6 @@
 		9CD33E0127172B980092EE6B = {
 			isa = PBXGroup;
 			children = (
-				9CD33E0C27172B980092EE6B /* iOS15-SwiftUI-Sample */,
 				9CD33E2027172C2E0092EE6B /* Searchable */,
 				9CD33E3227172FFE0092EE6B /* PullToRefresh */,
 				9CD33E0B27172B980092EE6B /* Products */,
@@ -77,30 +60,10 @@
 		9CD33E0B27172B980092EE6B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9CD33E0A27172B980092EE6B /* iOS15-SwiftUI-Sample.app */,
 				9CD33E1F27172C2D0092EE6B /* Searchable.app */,
 				9CD33E3127172FFE0092EE6B /* PullToRefresh.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		9CD33E0C27172B980092EE6B /* iOS15-SwiftUI-Sample */ = {
-			isa = PBXGroup;
-			children = (
-				9CD33E0D27172B980092EE6B /* iOS15_SwiftUI_SampleApp.swift */,
-				9CD33E0F27172B980092EE6B /* ContentView.swift */,
-				9CD33E1127172B9C0092EE6B /* Assets.xcassets */,
-				9CD33E1327172B9C0092EE6B /* Preview Content */,
-			);
-			path = "iOS15-SwiftUI-Sample";
-			sourceTree = "<group>";
-		};
-		9CD33E1327172B9C0092EE6B /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				9CD33E1427172B9C0092EE6B /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		9CD33E2027172C2E0092EE6B /* Searchable */ = {
@@ -144,23 +107,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9CD33E0927172B980092EE6B /* iOS15-SwiftUI-Sample */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9CD33E1827172B9C0092EE6B /* Build configuration list for PBXNativeTarget "iOS15-SwiftUI-Sample" */;
-			buildPhases = (
-				9CD33E0627172B980092EE6B /* Sources */,
-				9CD33E0727172B980092EE6B /* Frameworks */,
-				9CD33E0827172B980092EE6B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "iOS15-SwiftUI-Sample";
-			productName = "iOS15-SwiftUI-Sample";
-			productReference = 9CD33E0A27172B980092EE6B /* iOS15-SwiftUI-Sample.app */;
-			productType = "com.apple.product-type.application";
-		};
 		9CD33E1E27172C2D0092EE6B /* Searchable */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CD33E2A27172C300092EE6B /* Build configuration list for PBXNativeTarget "Searchable" */;
@@ -205,9 +151,6 @@
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
-					9CD33E0927172B980092EE6B = {
-						CreatedOnToolsVersion = 13.0;
-					};
 					9CD33E1E27172C2D0092EE6B = {
 						CreatedOnToolsVersion = 13.0;
 					};
@@ -229,7 +172,6 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9CD33E0927172B980092EE6B /* iOS15-SwiftUI-Sample */,
 				9CD33E1E27172C2D0092EE6B /* Searchable */,
 				9CD33E3027172FFE0092EE6B /* PullToRefresh */,
 			);
@@ -237,15 +179,6 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9CD33E0827172B980092EE6B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9CD33E1527172B9C0092EE6B /* Preview Assets.xcassets in Resources */,
-				9CD33E1227172B9C0092EE6B /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		9CD33E1D27172C2D0092EE6B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -267,15 +200,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9CD33E0627172B980092EE6B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9CD33E1027172B980092EE6B /* ContentView.swift in Sources */,
-				9CD33E0E27172B980092EE6B /* iOS15_SwiftUI_SampleApp.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		9CD33E1B27172C2D0092EE6B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -413,66 +337,6 @@
 			};
 			name = Release;
 		};
-		9CD33E1927172B9C0092EE6B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"iOS15-SwiftUI-Sample/Preview Content\"";
-				DEVELOPMENT_TEAM = TXFV3DH636;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "co.kotetu.example.swiftui.ios15.iOS15-SwiftUI-Sample";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		9CD33E1A27172B9C0092EE6B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"iOS15-SwiftUI-Sample/Preview Content\"";
-				DEVELOPMENT_TEAM = TXFV3DH636;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "co.kotetu.example.swiftui.ios15.iOS15-SwiftUI-Sample";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		9CD33E2B27172C300092EE6B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -601,15 +465,6 @@
 			buildConfigurations = (
 				9CD33E1627172B9C0092EE6B /* Debug */,
 				9CD33E1727172B9C0092EE6B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9CD33E1827172B9C0092EE6B /* Build configuration list for PBXNativeTarget "iOS15-SwiftUI-Sample" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9CD33E1927172B9C0092EE6B /* Debug */,
-				9CD33E1A27172B9C0092EE6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
