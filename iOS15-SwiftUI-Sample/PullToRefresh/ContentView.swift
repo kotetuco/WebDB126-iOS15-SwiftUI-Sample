@@ -47,6 +47,8 @@ struct ContentView: View {
     }
 
     private func load() async -> [Character] {
+        // 注意) 下記URLはダミーのURLです。実際にWeb APIから値を取得したい場合は、
+        //      有効なURLを別途用意して下記を書き換えた上で実行してください。
         let urtString = "https://example.com/sample.json"
         guard let url = URL(string: urtString) else {
             return []
