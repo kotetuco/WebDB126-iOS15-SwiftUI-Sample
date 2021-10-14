@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  AttributedString
+//  Runs
 //
 //  Created by kotetu on 2021/10/14.
 //
@@ -12,14 +12,24 @@ struct ContentView: View {
         let text = "Let’s look at an example."
 
         var attributedString = AttributedString(text)
-
-        attributedString.font
-            = .boldSystemFont(ofSize: 21)
-        attributedString.foregroundColor = .white
-        attributedString.backgroundColor = .black
+        attributedString.font = .largeTitle.bold()
 
         let range = attributedString.range(of: "an example")!
-        attributedString[range].foregroundColor = .orange
+        attributedString[range].font = .largeTitle.italic()
+        attributedString[range].underlineStyle = .single
+        attributedString[range].link
+            = URL(string: "https://example.com")
+
+        let runs = attributedString.runs
+
+        print(runs.count) // 3が出力される
+
+        for (value, range) in runs[\.link] {
+            if value != nil {
+                attributedString[range].foregroundColor
+                    = .orange
+            }
+        }
 
         return attributedString
     }
