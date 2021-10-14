@@ -31,6 +31,10 @@
 		9CD33E7E2717AD670092EE6B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD33E7D2717AD670092EE6B /* ContentView.swift */; };
 		9CD33E802717AD6A0092EE6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CD33E7F2717AD6A0092EE6B /* Assets.xcassets */; };
 		9CD33E832717AD6A0092EE6B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CD33E822717AD6A0092EE6B /* Preview Assets.xcassets */; };
+		9CD33E8E2717AFB30092EE6B /* FocusStateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD33E8D2717AFB30092EE6B /* FocusStateApp.swift */; };
+		9CD33E902717AFB30092EE6B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD33E8F2717AFB30092EE6B /* ContentView.swift */; };
+		9CD33E922717AFB70092EE6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CD33E912717AFB70092EE6B /* Assets.xcassets */; };
+		9CD33E952717AFB70092EE6B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CD33E942717AFB70092EE6B /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +68,11 @@
 		9CD33E7D2717AD670092EE6B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9CD33E7F2717AD6A0092EE6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CD33E822717AD6A0092EE6B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9CD33E8B2717AFB30092EE6B /* FocusState.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FocusState.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CD33E8D2717AFB30092EE6B /* FocusStateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusStateApp.swift; sourceTree = "<group>"; };
+		9CD33E8F2717AFB30092EE6B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9CD33E912717AFB70092EE6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9CD33E942717AFB70092EE6B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +118,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9CD33E882717AFB30092EE6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -121,6 +137,7 @@
 				9CD33E562717AA840092EE6B /* Runs */,
 				9CD33E682717ACA60092EE6B /* Markdown */,
 				9CD33E7A2717AD670092EE6B /* DynamicTypeSize */,
+				9CD33E8C2717AFB30092EE6B /* FocusState */,
 				9CD33E0B27172B980092EE6B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -134,6 +151,7 @@
 				9CD33E552717AA840092EE6B /* Runs.app */,
 				9CD33E672717ACA60092EE6B /* Markdown.app */,
 				9CD33E792717AD670092EE6B /* DynamicTypeSize.app */,
+				9CD33E8B2717AFB30092EE6B /* FocusState.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -252,6 +270,25 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		9CD33E8C2717AFB30092EE6B /* FocusState */ = {
+			isa = PBXGroup;
+			children = (
+				9CD33E8D2717AFB30092EE6B /* FocusStateApp.swift */,
+				9CD33E8F2717AFB30092EE6B /* ContentView.swift */,
+				9CD33E912717AFB70092EE6B /* Assets.xcassets */,
+				9CD33E932717AFB70092EE6B /* Preview Content */,
+			);
+			path = FocusState;
+			sourceTree = "<group>";
+		};
+		9CD33E932717AFB70092EE6B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9CD33E942717AFB70092EE6B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -357,6 +394,23 @@
 			productReference = 9CD33E792717AD670092EE6B /* DynamicTypeSize.app */;
 			productType = "com.apple.product-type.application";
 		};
+		9CD33E8A2717AFB30092EE6B /* FocusState */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CD33E962717AFB70092EE6B /* Build configuration list for PBXNativeTarget "FocusState" */;
+			buildPhases = (
+				9CD33E872717AFB30092EE6B /* Sources */,
+				9CD33E882717AFB30092EE6B /* Frameworks */,
+				9CD33E892717AFB30092EE6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FocusState;
+			productName = FocusState;
+			productReference = 9CD33E8B2717AFB30092EE6B /* FocusState.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -385,6 +439,9 @@
 					9CD33E782717AD670092EE6B = {
 						CreatedOnToolsVersion = 13.0;
 					};
+					9CD33E8A2717AFB30092EE6B = {
+						CreatedOnToolsVersion = 13.0;
+					};
 				};
 			};
 			buildConfigurationList = 9CD33E0527172B980092EE6B /* Build configuration list for PBXProject "iOS15-SwiftUI-Sample" */;
@@ -406,6 +463,7 @@
 				9CD33E542717AA840092EE6B /* Runs */,
 				9CD33E662717ACA60092EE6B /* Markdown */,
 				9CD33E782717AD670092EE6B /* DynamicTypeSize */,
+				9CD33E8A2717AFB30092EE6B /* FocusState */,
 			);
 		};
 /* End PBXProject section */
@@ -465,6 +523,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9CD33E892717AFB30092EE6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CD33E952717AFB70092EE6B /* Preview Assets.xcassets in Resources */,
+				9CD33E922717AFB70092EE6B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -519,6 +586,15 @@
 			files = (
 				9CD33E7E2717AD670092EE6B /* ContentView.swift in Sources */,
 				9CD33E7C2717AD670092EE6B /* DynamicTypeSizeApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CD33E872717AFB30092EE6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CD33E902717AFB30092EE6B /* ContentView.swift in Sources */,
+				9CD33E8E2717AFB30092EE6B /* FocusStateApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1001,6 +1077,66 @@
 			};
 			name = Release;
 		};
+		9CD33E972717AFB70092EE6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FocusState/Preview Content\"";
+				DEVELOPMENT_TEAM = TXFV3DH636;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.kotetu.example.swiftui.ios15.FocusState;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9CD33E982717AFB70092EE6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FocusState/Preview Content\"";
+				DEVELOPMENT_TEAM = TXFV3DH636;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.kotetu.example.swiftui.ios15.FocusState;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1063,6 +1199,15 @@
 			buildConfigurations = (
 				9CD33E852717AD6A0092EE6B /* Debug */,
 				9CD33E862717AD6A0092EE6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CD33E962717AFB70092EE6B /* Build configuration list for PBXNativeTarget "FocusState" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CD33E972717AFB70092EE6B /* Debug */,
+				9CD33E982717AFB70092EE6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
