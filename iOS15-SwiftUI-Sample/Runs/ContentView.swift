@@ -20,10 +20,19 @@ struct ContentView: View {
         attributedString[range].link
             = URL(string: "https://example.com")
 
+        // 3が出力される
+        print(attributedString.runs.count)
+
+        // Let’sの文字色を変更する
+        let rangeOfLets = attributedString.range(of: "Let’s")!
+        attributedString[rangeOfLets].foregroundColor = .blue
+
+        // 4が出力される
+        print(attributedString.runs.count)
+
         let runs = attributedString.runs
 
-        print(runs.count) // 3が出力される
-
+        // リンクの文字色を変更する
         for (value, range) in runs[\.link] {
             if value != nil {
                 attributedString[range].foregroundColor
