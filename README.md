@@ -5,10 +5,27 @@
 ## 動作環境
 
 - Xcode 13.0にて動作確認をしています。
+- いずれのサンプルコードも、Deployment Targetは15.0です(iOS 15.0以降のiOSで実行できます)。
 
 ## サンプルコードの実行方法
 
 - `iOS15-SwiftUI-Sample.xcodeproj` を開いて実行するとサンプルアプリケーションを起動できます。
+- `iOS15-SwiftUI-Sample.xcodeproj` を開いてXcodeを起動したら、実行したいTARGETを選択して実行してください。
+
+### サンプルコードに含まれるTARGETについて
+
+- `Searchable`
+  - `searchable修飾子 ── 検索UIをシンプルに実装` で使用したサンプルコードが含まれます。
+- `PullToRefresh`
+  - `task修飾子 ── 画面読み込み時の処理` および `refreshable修飾子 ── Pull-to-RefreshのUIとイベント処理` で使用したサンプルコードが含まれます。
+- `AttributedString`
+  - `AttributedString構造体 ── Swiftのメリットを活かした新API` で使用したサンプルコードが含まれます。
+- `Runs`
+  - `run ── 属性単位での範囲指定` で使用したサンプルコードが含まれます。
+- `DynamicTypeSize`
+  - `dynamicTypeSize修飾子 ── 文字サイズの変更を制限` で使用したサンプルコードが含まれます。
+- `FocusState`
+  - `FocusStateプロパティラッパー ── 新しいフォーカス制御` で使用したサンプルコードが含まれます。
 
 ## サンプルプログラムのメンテナンスについて
 
