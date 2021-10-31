@@ -35,6 +35,7 @@ struct ContentView: View {
                 List(characters, id: \.self) {
                     Text($0.name)
                 }
+                .listStyle(.insetGrouped)
             }
             .refreshable {
                 characters = await load()

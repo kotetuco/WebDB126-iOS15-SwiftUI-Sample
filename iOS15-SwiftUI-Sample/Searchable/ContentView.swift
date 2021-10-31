@@ -16,15 +16,6 @@ struct ContentView: View {
                               "The King of Hearts",
                               "The Cheshire Cat"]
 
-    private var filtered: [String] {
-        guard !query.isEmpty else {
-            return characters
-        }
-        return characters.filter {
-            $0.localizedCaseInsensitiveContains(query)
-        }
-    }
-
     var body: some View {
         return NavigationView {
             VStack {
@@ -35,6 +26,15 @@ struct ContentView: View {
             }
             .searchable(text: $query, prompt: "Search for name")
             .navigationTitle("Characters")
+        }
+    }
+
+    private var filtered: [String] {
+        guard !query.isEmpty else {
+            return characters
+        }
+        return characters.filter {
+            $0.localizedCaseInsensitiveContains(query)
         }
     }
 }

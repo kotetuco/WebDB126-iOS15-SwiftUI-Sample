@@ -13,13 +13,14 @@ struct ContentView: View {
 
         var attributedString = AttributedString(text)
 
-        attributedString.font
-            = .boldSystemFont(ofSize: 21)
-        attributedString.foregroundColor = .white
-        attributedString.backgroundColor = .black
+        // 文字列全体に適用
+        attributedString.font = .largeTitle.bold()
 
+        // 「an example」にのみ適用
         let range = attributedString.range(of: "an example")!
-        attributedString[range].foregroundColor = .orange
+        attributedString[range].font = .largeTitle.italic()
+        attributedString[range].underlineStyle = .single
+        attributedString[range].link = URL(string: "https://example.com")
 
         return attributedString
     }
