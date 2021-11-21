@@ -11,7 +11,7 @@ struct ContentView: View {
     @State private var name = "Musical"
     @State private var location = "New York City"
 
-    @FocusState private var focusedField: Field?
+    @FocusState private var focus: Field?
 
     private enum Field: Int, Hashable, CaseIterable {
         case name, location
@@ -20,14 +20,14 @@ struct ContentView: View {
     var body: some View {
         Form {
             TextField("Name",text: $name)
-                .focused($focusedField, equals: .name)
+                .focused($focus, equals: .name)
             TextField("Location", text: $location)
-                .focused($focusedField, equals: .location)
+                .focused($focus, equals: .location)
         }
 
         HStack {
             Button {
-                focusedField = .name
+                focus = .name
             } label: {
                 Text("Focus on name")
             }
@@ -35,7 +35,7 @@ struct ContentView: View {
             .padding()
 
             Button {
-                focusedField = nil
+                focus = nil
             } label: {
                 Text("Out of focus")
             }
