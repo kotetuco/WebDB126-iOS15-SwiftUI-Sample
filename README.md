@@ -17,7 +17,7 @@
 - **Searchable**
   - `searchable修飾子 ── 検索UIをシンプルに実装` で使用したサンプルコードが含まれます。
 - **PullToRefresh**
-  - `task修飾子 ── 画面読み込み時の処理` および `refreshable修飾子 ── Pull-to-RefreshのUIとイベント処理` で使用したサンプルコードが含まれます。
+  - `refreshable修飾子 ── Pull-to-RefreshのUIとイベント処理` で使用したサンプルコードが含まれます。
 - **AttributedString**
   - `AttributedString構造体 ── Swiftのメリットを活かした新API` で使用したサンプルコードが含まれます。
 - **Runs**
