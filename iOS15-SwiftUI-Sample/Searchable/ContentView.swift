@@ -9,7 +9,6 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var query = ""
-
     private let characters = ["Alice",
                               "The White Rabbit",
                               "The Queen of Hearts",

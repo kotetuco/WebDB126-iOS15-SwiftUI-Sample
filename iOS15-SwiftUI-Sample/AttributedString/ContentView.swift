@@ -10,7 +10,6 @@ import SwiftUI
 struct ContentView: View {
     private var attributedString: AttributedString {
         let text = "Let’s look at an example."
-
         var attributedString = AttributedString(text)
 
         // 文字列全体に適用
