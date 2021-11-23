@@ -32,13 +32,17 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                List(characters, id: \.self) {
-                    Text($0.name)
+                if characters.isEmpty {
+                    ProgressView()
+                } else {
+                    List(characters, id: \.self) {
+                        Text($0.name)
+                    }
+                    .listStyle(.insetGrouped)
+                    .refreshable {
+                        characters = await load()
+                    }
                 }
-                .listStyle(.insetGrouped)
-            }
-            .refreshable {
-                characters = await load()
             }
             .task {
                 characters = await load()
