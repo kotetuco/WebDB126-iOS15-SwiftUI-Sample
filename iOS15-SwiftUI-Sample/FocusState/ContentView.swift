@@ -19,28 +19,35 @@ struct ContentView: View {
 
     var body: some View {
         Form {
-            TextField("Name",text: $name)
-                .focused($focus, equals: .name)
-            TextField("Location", text: $location)
-                .focused($focus, equals: .location)
-        }
+            Section {
+                TextField("Name",text: $name)
+                    .focused($focus, equals: .name)
+                TextField("Location", text: $location)
+                    .focused($focus, equals: .location)
+            } footer: {
+                HStack {
+                    Spacer()
 
-        HStack {
-            Button {
-                focus = .name
-            } label: {
-                Text("Focus on name")
-            }
-            .buttonStyle(.bordered)
-            .padding()
+                    Button {
+                        focus = .name
+                    } label: {
+                        Text("Focus on name")
+                    }
+                    .buttonStyle(.bordered)
+                    .padding()
 
-            Button {
-                focus = nil
-            } label: {
-                Text("Out of focus")
+                    Button {
+                        focus = nil
+                    } label: {
+                        Text("Out of focus")
+                    }
+                    .buttonStyle(.bordered)
+                    .padding()
+
+                    Spacer()
+                }
             }
-            .buttonStyle(.bordered)
-            .padding()
+
         }
     }
 }
